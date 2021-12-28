@@ -2,11 +2,25 @@
   <html lang="en" dir="ltr">
 
   <head>
+    <!-- normalise -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <!-- font Merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- font Aktiv Grotesk -->
+    <link rel="stylesheet" href="https://use.typekit.net/lff8wrn.css">
+    <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- favicon -->
     <link href="img/logo/favicon/favicon-32x32.png" rel="shortcut icon">
     <link href="img/logo/favicon/favicon-16x16.png" rel="shortcut icon">
+    <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/d8d75ec348.js" crossorigin="anonymous"></script>
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+
     <title>Hi I'm Dan, UX/UI Designer based in Manchester</title>
   </head>
 
@@ -14,7 +28,7 @@
     <!-- HEADER -->
     <header>
       <div>
-        <img src="img/logo/primary-logo/primary-logo.svg" alt="Dan Collins">
+        <img id="logo" src="img/logo/primary-logo/primary-logo.svg" alt="Dan Collins">
         <nav>
           <ul>
             <li><a href="index.html">Work</a></li>
@@ -56,7 +70,7 @@
 
               <p>A responsive web app allowing people seeking a career change to connect directly with experienced professionals for advice.</p>
               <!-- button or link label -->
-              <a href="careersteer.html">Check it out</a>
+              <a href="careersteer.html" class="button">Check it out</a>
               <!-- end second column -->
             </div>
           </div>
@@ -77,7 +91,7 @@
 
               <p>A mobile app that empowers people to learn new vocabulary on the go.</p>
               <!-- button or link label -->
-              <a href="">Check it out</a>
+              <a href="" class="button">Check it out</a>
               <!-- end second column -->
             </div>
           </div>
@@ -87,13 +101,14 @@
     </main>
 
     <!-- FOOTER  -->
-    <footer id="contact">      <div>
+    <footer id="contact">
+      <div>
         <h2>Let’s work together</h2>
         <p>
           If you have a project in mind or are simply interested in finding out more, get in touch.
         </p>
         <div>
-          <a href="mailto:dancollins82@gmail.com">Email me</a>
+          <a href="mailto:dancollins82@gmail.com" class="button secondary">Email me</a>
         </div>
         <div>
           <!--Social Media Layout and Placeholders-->

@@ -2,11 +2,25 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <!-- normalise -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <!-- font Merriweather -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- font Aktiv Grotesk -->
+  <link rel="stylesheet" href="https://use.typekit.net/lff8wrn.css">
+  <!-- Stylesheet -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- favicon -->
   <link href="img/logo/favicon/favicon-32x32.png" rel="shortcut icon">
   <link href="img/logo/favicon/favicon-16x16.png" rel="shortcut icon">
+  <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/d8d75ec348.js" crossorigin="anonymous"></script>
+  <!-- responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
+
   <title>Hi I'm Dan, UX/UI Designer based in Manchester</title>
 </head>
 
@@ -14,7 +28,7 @@
   <!-- HEADER -->
   <header>
     <div>
-      <img src="img/logo/primary-logo/primary-logo.svg" alt="Dan Collins">
+      <img id="logo" src="img/logo/primary-logo/primary-logo.svg" alt="Dan Collins">
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -36,8 +50,8 @@
       </div>
       <div>
         <picture>
-          <source srcset="img/careersteer/cs-style-guide@1200px.jpg" media="(max-width:767px)">
-          <img src="img/careersteer/cs-style-guide@600px.jpg" alt="careersteer hero">
+          <source srcset="img/careersteer/cs-style-guide@600px.jpg" media="(max-width:767px)">
+          <img src="img/careersteer/cs-style-guide@1200px.jpg" alt="careersteer hero">
         </picture>
       </div>
     </div>
@@ -70,8 +84,8 @@
           <p>I approached this project following the design thinking method – an iterative process that seeks to understand the user, challenge assumptions, and redefine problems to identify successful solutions.
           </p>
           <picture>
-            <source srcset="img/careersteer/design-process@1200px.png" media="(max-width:767px)">
-            <img src="img/careersteer/design-process@600px.png" alt="the process">
+            <source srcset="img/careersteer/design-process@600px.png" media="(max-width:767px)">
+            <img src="img/careersteer/design-process@1200px.png" alt="the process">
           </picture>
         </div>
       </div>
@@ -84,8 +98,8 @@
             experiences towards changing careers.
           </p>
           <picture>
-            <source srcset="img/careersteer/cs-interviews@1200px.jpg" media="(max-width:767px)">
-            <img src="img/careersteer/cs-interviews@600px.jpg" alt="research">
+            <source srcset="img/careersteer/cs-interviews@600px.jpg" media="(max-width:767px)">
+            <img src="img/careersteer/cs-interviews@1200px.jpg" alt="research">
           </picture>
         </div>
       </div>
@@ -97,8 +111,8 @@
           <p>Following my research, I synthesised my findings and created personas and user journeys to better empathise with my main user groups. These exercises formed a great foundation to move into feature ideation.
           </p>
           <picture>
-            <source srcset="img/careersteer/max-persona@1200px.jpg" media="(max-width:767px)">
-            <img src="img/careersteer/max-persona@600px.jpg" alt="personas">
+            <source srcset="img/careersteer/max-persona@600px.jpg" media="(max-width:767px)">
+            <img src="img/careersteer/max-persona@1200px.jpg" alt="personas">
           </picture>
         </div>
       </div>
@@ -111,8 +125,8 @@
             until I found a good combination of features and elements that matched the user’s needs.
           </p>
           <picture>
-            <source srcset="img/careersteer/cs-prototype@1200px.jpg" media="(max-width:767px)">
-            <img src="img/careersteer/cs-prototype@600px.jpg" alt="research">
+            <source srcset="img/careersteer/cs-prototype@600px.jpg" media="(max-width:767px)">
+            <img src="img/careersteer/cs-prototype@1200px.jpg" alt="research">
           </picture>
         </div>
       </div>
@@ -126,8 +140,8 @@
           <p>The study was moderated and done remotely using Zoom, testing the mid-fidelity prototype created with Figma.
           </p>
           <picture>
-            <source srcset="img/careersteer/cs_affinity_map@1200px.jpg" media="(max-width:767px)">
-            <img src="img/careersteer/cs_affinity_map@600px.jpg" alt="tesing">
+            <source srcset="img/careersteer/cs_affinity_map@600px.jpg" media="(max-width:767px)">
+            <img src="img/careersteer/cs_affinity_map@1200px.jpg" alt="tesing">
           </picture>
         </div>
       </div>
@@ -142,8 +156,8 @@
         </div>
         <div>
           <picture>
-            <source srcset="img/careersteer/cs-key-steps-mockup@1200px.jpg" media="(max-width:767px)">
-            <img src="img/careersteer/cs-key-steps-mockup@600px.jpg" alt="final image">
+            <source srcset="img/careersteer/cs-key-steps-mockup@600px.jpg" media="(max-width:767px)">
+            <img src="img/careersteer/cs-key-steps-mockup@1200px.jpg" alt="final image">
           </picture>
         </div>
       </div>
@@ -185,7 +199,7 @@
         If you have a project in mind or are simply interested in finding out more, get in touch.
       </p>
       <div>
-        <a href="mailto:dancollins82@gmail.com">Email me</a>
+        <a href="mailto:dancollins82@gmail.com" class="button secondary">Email me</a>
       </div>
       <div>
         <!--Social Media Layout and Placeholders-->
