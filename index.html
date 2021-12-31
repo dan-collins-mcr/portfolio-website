@@ -27,8 +27,8 @@
   <body>
     <!-- HEADER -->
     <header>
-      <div>
-        <img id="logo" src="img/logo/primary-logo/primary-logo.svg" alt="Dan Collins">
+      <div class="container center">
+        <img class="logo" src="img/logo/monogram/keyline/png/dc-keyline-64x64.png" alt="Dan Collins">
         <nav>
           <ul>
             <li><a href="index.html">Work</a></li>
@@ -40,69 +40,72 @@
     </header>
     <main>
 
-      <!-- For the hero section -->
-      <div>
-        <div>
+      <!--begining of hero section-->
+      <div id="hero">
+        <div class="container center">
           <h1>
             I’m Dan – a Product and Visual Designer based in Manchester.
           </h1>
-          <p>I’m passionate about crafting innovative human-centred products that are adaptive, inclusive and positively impact people’s lives.</p>
+          <body-lrg>I’m passionate about crafting innovative human-centred products that are adaptive, inclusive and positively impact people’s lives.</body-lrg>
         </div>
       </div>
+      <!--end of hero section-->
 
-      <!-- PROJECTS -->
-      <div>
-        <div>
+      <!--beginning of whole 'My Work' section block-->
+      <div id="work">
+        <div class="container">
+          <!--container for 'My Work' section-->
           <h2>My work</h2>
-          <div>
-            <!-- open row for 2x columns for project -->
+          <div class="row">
+            <!-- open row for 2x columns for careersteer -->
             <div>
-              <!-- first column for project images -->
+              <!-- left column with image -->
               <picture>
                 <source srcset="img/careersteer/careersteer-iphone-mockup@600px.jpg" media="(max-width:767px)">
                 <img src="img/careersteer/careersteer-iphone-mockup@1200px.jpg" alt="CareerSteer">
               </picture>
             </div>
-            <!-- end first column -->
+            <!-- end of image column -->
             <div>
-              <!-- open second column used for text -->
+              <!-- open column for text -->
               <h3>CareerSteer</h3>
-
               <p>A responsive web app allowing people seeking a career change to connect directly with experienced professionals for advice.</p>
-              <!-- button or link label -->
+              <!-- button -->
               <a href="careersteer.html" class="button">Check it out</a>
-              <!-- end second column -->
             </div>
+            <!-- end of text column -->
           </div>
-          <!-- end row for 2x columns for project -->
-          <div>
-            <!-- open row for 2x columns for project -->
+          <!-- end of row for 2x columns for careersteer -->
+
+          <!-- open row for 2x columns for recall -->
+          <div class="row">
             <div>
-              <!-- first column for project images -->
+              <!-- left column with image -->
               <picture>
                 <source srcset="img/recall/recall-hero-image@600px.jpg" media="(max-width:767px)">
                 <img src="img/recall/recall-hero-image@1200px.jpg" alt="Recall">
               </picture>
             </div>
-            <!-- end first column -->
+            <!-- end of image column -->
             <div>
-              <!-- open second column used for text -->
+              <!-- open  column for text -->
               <h3>Recall</h3>
-
               <p>A mobile app that empowers people to learn new vocabulary on the go.</p>
-              <!-- button or link label -->
+              <!-- button -->
               <a href="" class="button">Check it out</a>
-              <!-- end second column -->
             </div>
+            <!-- end of text column -->
           </div>
-          <!-- end row for 2x columns for project -->
+          <!-- end row for 2x columns for recall -->
         </div>
+        <!-- end contaniner for 'My work' section -->
       </div>
+      <!-- end of whole  'My work' section block -->
     </main>
 
     <!-- FOOTER  -->
     <footer id="contact">
-      <div>
+      <div class="container center">
         <h2>Let’s work together</h2>
         <p>
           If you have a project in mind or are simply interested in finding out more, get in touch.
@@ -110,8 +113,8 @@
         <div>
           <a href="mailto:dancollins82@gmail.com" class="button secondary">Email me</a>
         </div>
-        <div>
-          <!--Social Media Layout and Placeholders-->
+        <div class="social">
+          <!--Social Media Layout-->
           <ul>
             <li><a href="https://www.instagram.com/dancollinscreative/" target="_blank">
                 <i class="fab fa-instagram"></i></a></li>
@@ -121,7 +124,7 @@
                 <i class="fab fa-dribbble"></i></a></li>
           </ul>
         </div>
-        <p>Copyright Dan Collins 2021</p>
+        <p id="copyright"> © Dan Collins 2021</p>
       </div>
     </footer>
 

@@ -4,8 +4,9 @@ Primary Colour (Alpha): #ED5F33;
 Secondary Colour (Beta): #04042F;
 Background colour (Charlie): #EDEDED;
 */
-body {
-  background-color: #EDEDED;
+* {
+  box-sizing: border-box;
+  /* universal default width of an element includesthe padding and the border */
 }
 
 /* FONTS */
@@ -16,6 +17,13 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: #04042f;
+}
+
+body-lrg {
+  font-family: 'aktiv-grotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4 {
@@ -51,13 +59,12 @@ a {
 }
 
 a:visited {
-  /* visited link */
-  color: #c21113;
+  color: #ED5F33;
 }
 
 a:hover,
 a:focus {
-  color: #ED5F33;
+  color: #c21113;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
@@ -72,23 +79,15 @@ img {
   width: 100%;
 }
 
-/* custom logo sizing */
-#logo {
-  width: 300px;
-  height: auto;
-}
-
 /* BUTTONS */
 /* primary button */
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ED5F33;
   color: #ffffff;
   font-weight: 500;
   padding: 16px;
   border-radius: 6px;
-  /* width of the border, type, color */
   transition: 0.2s opacity;
   text-decoration: none;
 }
@@ -115,13 +114,12 @@ img {
 .button.secondary {
   background-color: transparent;
   color: #ED5F33;
-  font-weight: 500;
   border: 2px solid #ED5F33;
   text-decoration: none;
 }
 
 .button.secondary:visited, {
-  background-color: #ED5F33;
+  background-color: transparent;
   color: #ffffff;
   text-decoration: none;
 }
@@ -136,4 +134,121 @@ img {
   background-color: #c21113;
   color: #ffffff;
   text-decoration: none;
+}
+
+/* LAYOUT STYLING */
+/* HEADER SECTION */
+header {
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 10px 0;
+  position: fixed;
+  box-shadow: 0px 4px 13px 0px rgba(50, 50, 50, 0.2);
+  width: 100%;
+}
+
+.logo {
+  max-width: 64px;
+  align: center
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ED5F33;
+}
+
+nav>ul>li>a:visited {
+  color: #ED5F33;
+}
+
+nav>ul>li>a:hover, a:focus {
+  color: #c21113;
+}
+
+/* MAIN SECTION */
+main {
+  padding-top: 118px;
+}
+
+#hero {
+  background-color: #04042F;
+  color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero-project {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+#work .row {
+  padding-bottom: 25px;
+}
+
+#hero-project .row {
+  padding-bottom: 25px;
+}
+
+/* FOOTER SECTION */
+footer {
+  background-color: #04042F;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.social>ul {
+  list-style-type: none;
+  padding: 10px;
+  width: 100%
+}
+
+.social>ul>li {
+  display: inline-block;
+}
+
+.social>ul>li>a {
+  padding: 0 15px;
+  color: #ffffff;
+}
+
+.social>ul>li>a:visited {
+  color: #ffffff;
+}
+
+.social>ul>li>a:hover, a:focus {
+  color: #c21113;
+}
+
+#copyright {
+  text-align: center;
+  font-size: 12px;
+  color: #686882;
+}
+
+/* UNIVERSAL */
+.container {
+  padding: 0 15px;
+}
+
+.center {
+  text-align: center;
 }
