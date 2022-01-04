@@ -19,35 +19,28 @@ body {
   color: #04042f;
 }
 
-body-lrg {
-  font-family: 'aktiv-grotesk', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.6;
-}
-
 h1, h2, h3, h4 {
   font-family: 'Merriweather', sans-serif;
   line-height: 1.4;
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25em;
-  font-weight: 700;
-}
-
-h3 {
   font-size: 1.75em;
   font-weight: 700;
 }
 
+h3 {
+  font-size: 1.45em;
+  font-weight: 700;
+}
+
 h4 {
-  font-size: 1.35em;
+  font-size: 1.25em;
   font-weight: 400;
 }
 
@@ -86,10 +79,10 @@ img {
   background-color: #ED5F33;
   color: #ffffff;
   font-weight: 500;
+  text-decoration: none;
   padding: 16px;
   border-radius: 6px;
   transition: 0.2s opacity;
-  text-decoration: none;
 }
 
 .button:visited {
@@ -102,6 +95,7 @@ img {
   background-color: #ed6f33;
   color: #ffffff;
   text-decoration: none;
+  opacity: 0.8;
 }
 
 .button:active, {
@@ -141,6 +135,7 @@ img {
 header {
   background-color: #ffffff;
   margin: 0 auto;
+  text-align: center;
   padding: 10px 0;
   position: fixed;
   box-shadow: 0px 4px 13px 0px rgba(50, 50, 50, 0.2);
@@ -148,14 +143,14 @@ header {
 }
 
 .logo {
-  max-width: 64px;
-  align: center
+  max-width: 32px;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-  width: 100%
+  margin-bottom: 0;
+  width: 100%;
 }
 
 nav>ul>li {
@@ -179,24 +174,34 @@ nav>ul>li>a:hover, a:focus {
 
 /* MAIN SECTION */
 main {
-  padding-top: 118px;
+  padding-top: 100px;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 16px;
 }
 
 #hero {
   background-color: #04042F;
   color: #ffffff;
-  padding: 20px 0;
+  padding: 40px 0;
+  text-align: center;
   display: inline-block;
   width: 100%;
 }
 
 #hero-project {
   background-color: #ffffff;
-  padding: 20px 0;
+  padding: 40px 0;
   display: inline-block;
   margin: 0 auto;
   text-align: center;
   width: 100%;
+}
+
+#work h2 {
+  text-align: center;
 }
 
 #work .row {
@@ -207,18 +212,30 @@ main {
   padding-bottom: 25px;
 }
 
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 /* FOOTER SECTION */
 footer {
   background-color: #04042F;
+  text-align: center;
   color: #ffffff;
-  margin: 0 auto;
-  padding: 10px 0;
+  padding: 0.67em;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .social>ul {
   list-style-type: none;
   padding: 10px;
-  width: 100%
+  width: 100%;
 }
 
 .social>ul>li {
@@ -251,4 +268,123 @@ footer {
 
 .center {
   text-align: center;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+/* CSS ANIMATION */
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 16px 0;
+  }
+
+  .logo {
+    margin-top: 10px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  main {
+    padding-top: 80px;
+  }
+
+  #hero {
+    padding: 60px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  #about h3 {
+    margin-top: 0;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #hero {
+    padding: 100px;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
 }
