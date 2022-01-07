@@ -80,7 +80,7 @@ img {
   color: #ffffff;
   font-weight: 500;
   text-decoration: none;
-  padding: 16px;
+  padding: 12px 32px;
   border-radius: 6px;
   transition: 0.2s opacity;
 }
@@ -134,27 +134,21 @@ img {
 /* HEADER SECTION */
 header {
   background-color: #ffffff;
-  margin: 0 auto;
-  text-align: center;
-  padding: 10px 0;
+  padding: 12px 0 12px;
   position: fixed;
   box-shadow: 0px 4px 13px 0px rgba(50, 50, 50, 0.2);
   width: 100%;
 }
 
 .logo {
-  max-width: 32px;
+  max-width: 36px;
+  vertical-align: middle;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 0;
-  width: 100%;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -172,9 +166,39 @@ nav>ul>li>a:hover, a:focus {
   color: #c21113;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+  padding: 0 0 10px;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 30px;
+  padding-right: 0em;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 16px 0;
+  border-top: 1px solid #EDEDED;
+}
+
+
+
 /* MAIN SECTION */
 main {
-  padding-top: 100px;
+  padding-top: 60.56px;
 }
 
 [class*="col-"] {
@@ -202,6 +226,10 @@ main {
 
 #work h2 {
   text-align: center;
+}
+
+#work h3 {
+  margin-top: 0;
 }
 
 #work .row {
@@ -263,7 +291,7 @@ footer {
 
 /* UNIVERSAL */
 .container {
-  padding: 0 15px;
+  padding: 0 16px;
 }
 
 .center {
@@ -326,65 +354,82 @@ footer {
 }
 
 /* ==============================
-Medium devices (640px and larger)
+Medium devices (641px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
-    padding: 16px 0;
+    padding: 20px 0;
   }
 
   .logo {
-    margin-top: 10px;
+    max-width: 42px;
+    margin-top: 0px;
   }
 
   nav {
     width: auto;
     float: right;
-    display: inline-block;
     vertical-align: middle;
   }
 
-  main {
-    padding-top: 80px;
+  nav>ul {
+    margin: 0;
   }
 
-  #hero {
-    padding: 60px;
+  nav>ul>li {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
   }
 
-  #hero span {
-    display: block;
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
   }
 
-  .col-md-6 {
-    width: 50%;
+  .navtoggle li:last-child {
+    display: none;
+
+    main {
+      padding-top: 82.66px;
+    }
+
+    #hero {
+      padding: 60px;
+    }
+
+    #hero span {
+      display: block;
+    }
+
+    .col-md-6 {
+      width: 50%;
+    }
+
+    #about h3 {
+      margin-top: 0;
+    }
   }
 
-  #about h3 {
-    margin-top: 0;
-  }
-}
-
-/* ==============================
+  /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  @media only screen and (min-width: 1024px) {
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-  #hero {
-    padding: 100px;
-  }
+    #hero {
+      padding: 100px;
+    }
 
-  .col-md-7 {
-    width: 58.33%;
-  }
+    .col-md-7 {
+      width: 58.33%;
+    }
 
-  .col-md-5 {
-    width: 41.66%;
+    .col-md-5 {
+      width: 41.66%;
+    }
   }
-}
