@@ -176,13 +176,13 @@ nav>ul>li>a:hover, a:focus {
 }
 
 .navtoggle.responsive nav {
-    padding: 24px 0 0;
+  padding: 24px 0 0;
 }
 
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -4px;
   bottom: 0;
   font-size: 30px;
   padding-right: 0em;
@@ -194,7 +194,9 @@ nav>ul>li>a:hover, a:focus {
   border-top: 1px solid #EDEDED;
 }
 
-
+.navtoggle.responsive li:last-child {
+  padding: 0;
+}
 
 /* MAIN SECTION */
 main {
@@ -276,7 +278,7 @@ footer {
 }
 
 .social>ul>li>a:visited {
-  color: #ffffff;
+  fd color: #ffffff;
 }
 
 .social>ul>li>a:hover, a:focus {
@@ -367,20 +369,20 @@ Medium devices (641px and larger)
     margin-top: 0px;
   }
 
-  nav {
-    width: auto;
-    float: right;
-    vertical-align: middle;
-  }
-
   nav>ul {
     margin: 0;
   }
 
   nav>ul>li {
     display: inline-block;
-    padding: 0;
-    vertical-align: middle;
+    padding: 0 !important;
+    margin-top: 7px;
+  }
+
+  .navtoggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .navtoggle li:not(:last-child) {
@@ -409,27 +411,25 @@ Medium devices (641px and larger)
     #about h3 {
       margin-top: 0;
     }
-  }
 
-  /* ==============================
+    /* ==============================
 Large devices (1024px or larger)
 ================================= */
-  @media only screen and (min-width: 1024px) {
-    .container {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+    @media only screen and (min-width: 1024px) {
+      .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
-    #hero {
-      padding: 100px;
-    }
+      #hero {
+        padding: 100px;
+      }
 
-    .col-md-7 {
-      width: 58.33%;
-    }
+      .col-md-7 {
+        width: 58.33%;
+      }
 
-    .col-md-5 {
-      width: 41.66%;
-    }
-  }
+      .col-md-5 {
+        width: 41.66%;
+      }
